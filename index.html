@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/coffee-cup.png">
+    <title>Survey</title>
+</head>
+<body>
+
+    <div class="question-section">
+        <div class="header">
+            <h1>Do your work colleagues make an awful cup of coffee/tea?</h1>
+            <p>We've all been there, hard away at work but desperate for a drink. You can't possibly stop and go make one because you'll lose your flow and plus your manager has a close eye on you because the deadline is approaching.<br>
+            Then suddenly you hear "I'm going to make a drink.. <b><em>Does anyone want one?"</em></b> <br>
+            It's like they could see the desperation in your eyes and your dry dehydrated lips from across the desk. But will it be nice?</p>
+        </div>
+        <div class="contact">
+            <p><b>Name</b></p>
+            <input type="text" placeholder="First">
+            <input type="text" placeholder="Last">
+            <br>
+            <p><b>Email</b></p>
+            <input type="email">
+        </div>
+        <hr>
+        <div class="question-box">
+            <p>Do you forget what drink you asked for because there's so much milk in it?</p>
+            <input type="checkbox" name="check" onclick="onlyOne(this)"> Yes
+            <br>
+            <input type="checkbox" name="check" onclick="onlyOne(this)"> No
+        </div>
+        <br>
+        <div class="question-box">
+            <p>When that one staff member asks the office "Anyone want a drink?!" do you instantly sigh because it's not your office bestie who knows how to make your iced caramel latte with oat milk just the way you like it?</p>
+            <input type="checkbox" name="check1" onclick="onlyOne1(this)"> *sighs in disappointment*
+            <br>
+            <input type="checkbox" name="check1" onclick="onlyOne1(this)"> I'll survive 
+        </div>
+        <br>
+        <div class="question-box">
+            <p>Don't you just hate it when the person who made your drink is sat watching you, waiting for you to take a sip so they can shout, "HOW IS IT?!" but it tastes awful.. what do you say?</p>
+            <input type="text" placeholder="e.g. Did you put sugar in?">
+        </div>
+        <br>
+        <div class="question-box">
+            <p>Do they give you the dusty white mug at the back of the cupboard? Even though everyone knows your mug is the one with your face on that they bought you for christmas..</p>
+            <input type="checkbox" name="check2" onclick="onlyOne2(this)"> Ugh, yeah
+            <br>
+            <input type="checkbox" name="check2" onclick="onlyOne2(this)"> Where did that cup even come from?!
+        </div>
+        <br>
+        <div class="question-box">
+            <p>Do you just say no when asked because you already know you'll be disappointed?</p>
+            <input type="checkbox" name="check3" onclick="onlyOne3(this)"> Yes
+            <br>
+            <input type="checkbox"name="check3" onclick="onlyOne3(this)"> No, i'm thirsty so i'll take a risk
+        </div>
+        <br>
+        <div class="submit">
+            <button class="button" onclick="clicked(event)">Submit</button>
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
